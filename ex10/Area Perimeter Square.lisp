@@ -1,0 +1,12 @@
+(defun calculate ()
+  (format t "Enter the side length of the square: ")
+  (finish-output)
+  (let* ((side (read))
+         (area (* side side))
+         (perimeter (* 4 side)))
+    (format t "--- Results ---~%")
+    (format t "Side: ~a~%" side)
+    (format t "Area: ~a~%" area)
+    (format t "Perimeter: ~a~%" perimeter)))
+
+(calculate)
